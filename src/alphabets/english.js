@@ -1,4 +1,4 @@
-const enAlphabet = [
+const alphabet = [
   { ch: "A" },
   { ch: "B" },
   { ch: "C" },
@@ -26,3 +26,5 @@ const enAlphabet = [
   { ch: "Y" },
   { ch: "Z" },
 ];
+
+export { alphabet };

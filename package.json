@@ -1,0 +1,27 @@
+{
+  "name": "varnamala",
+  "version": "1.0.0",
+  "description": "Interactive varnamala/alphabet learning tool.",
+  "main": "index.html",
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "rm -rf ./dist && parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vsr/varnamala.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vsr/varnamala/issues"
+  },
+  "homepage": "https://github.com/vsr/varnamala#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

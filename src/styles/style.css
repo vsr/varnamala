@@ -1,0 +1,12 @@
+#alphabet-list {
+  display: flex;
+}
+.card {
+  width: 100vw;
+  height: 100vh;
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  color: red;
+}
