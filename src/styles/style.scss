@@ -77,13 +77,15 @@ main {
 .card-content {
   margin: 1rem;
   border-radius: 1rem;
-  background-color: yellow;
+  background-color: #ffcc80;
+  color: #7d2e02;
   height: calc(100% - 2rem);
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
   .letter {
     font-weight: 900;
-    font-size: 10rem;
+    font-size: 16rem;
   }
 }
