@@ -1,22 +1,16 @@
 import "../styles/style.css";
+import alphabets from "../alphabets";
 
-console.log("varnamala");
-const m = document.querySelector("#alphabet-list");
-import("../alphabets/english").then(({ alphabet }) => {
-  console.log("alphabet", alphabet);
-  alphabet.forEach((letter) => {
-    console.log(letter);
-    const el = document.createElement("div");
-    el.classList.add("card");
-    el.innerHTML = letter.ch;
-    m.appendChild(el);
+const getAlphabet = (language) => {
+  return alphabets[language].get();
+};
+
+function init() {
+  // select the only language available for now
+  const lang = Object.keys(alphabets)[0];
+  getAlphabet(lang).then((a) => {
+    console.log("alphabet", lang, a);
   });
-});
+}
 
-// enAlphabet.forEach((letter) => {
-//   console.log(letter);
-//   const el = document.createElement("div");
-//   el.classList.add("card");
-//   el.innerHTML = letter.ch;
-//   m.appendChild(el);
-// });
+window.addEventListener("DOMContentLoaded", init);
