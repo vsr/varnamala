@@ -5,12 +5,34 @@
     <meta charset="utf-8" />
     <meta name=viewport content="width=device-width,initial-scale=1">
     <title>Varnamala</title>
+    <link rel="stylesheet" href="./styles/style.scss">
+
 </head>
 
 <body>
-    <main id="app">
-        <div id="alphabet-list"></div>
-    </main>
+    <div class="content">
+        <header class="app-header">
+            <h1>varnamala</h1>
+            <span class="selected-language" role="none">
+                <select id="language">
+                </select>
+            </span>
+        </header>
+        <main id="app">
+            <div id="alphabet-list" class="swipe">
+                <div class="swipe-wrap">
+                </div>
+            </div>
+            <div class="swipe-navigation">
+                <a class="prev">
+                    <span>prev</span>
+                </a>
+                <a class="next">
+                    <span>next</span>
+                </a>
+            </div>
+        </main>
+    </div>
     <script src="./scripts/app.js"></script>
 </body>
 
